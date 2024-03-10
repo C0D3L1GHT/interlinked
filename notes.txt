@@ -1,0 +1,40 @@
+INTERLINKED is an ascii roguelike that takes place in a matrioshka swarm.
+
+The player is an explorer amidst the station and must navigate the vast
+web of the station to get better gear, sleeves, and lore.
+
+While you forge safe paths in the station, 
+you can forge connections with local factions as well
+
+**********************************TODO**********************************
+
+- Procedural Swarm generation
+  - Swarm network map
+    - look into seed generation
+  - node name convention
+  - locks and keys?
+  - quests?
+    - NPCs give quests
+    - Quests are
+      - retreive items
+      - kill marked enemies
+      - discover info
+  - Nodes are dungeons with upper or lower rooms being new nodes
+
+- Figure out roguelike char stats (dv? mv? etc?)
+
+- Figure out sleeves
+
+- Figure out weapons, tools
+
+**********************************TECHNICAL**********************************
+
+- Game is in Rust
+
+- File layout
+  - XML config file for character stats
+  - XML config file for world state
+    - map network
+      - explored and unexplored lists
+      - LATER faction standing
+      - dungeon inventory (threats, rewards, lore, etc)
